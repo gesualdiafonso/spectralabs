@@ -1,0 +1,994 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #010D26;
+    min-width: 420px;
+    max-width: 1680px;
+    margin: 0 auto;
+}
+
+h1, h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+h4{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+p, span{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+}
+a, li{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+/**********************************************************/
+/**********************************************************/
+/********************* Footer *****************************/
+/**********************************************************/
+/**********************************************************/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.personal-info img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.personal-info, .social-media {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media li {
+    margin: 0 10px;
+}
+
+.social-media a {
+    color: #fff;
+    font-size: 24px;
+}
+
+/**********************************************************/
+/**********************************************************/
+/****************** Home Landing **************************/
+/**********************************************************/
+/**********************************************************/
+.carousel-inner{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.carousel-inner img{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Estilos gerais para todos os dispositivos */
+.carousel-caption {
+    position: absolute;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+
+/* Sony - padrão para dispositivos móveis */
+.caption-sony {
+    bottom: 15%;
+    left: 5%;
+    text-align: center;
+}
+.caption-sony p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    width: 90%;
+}
+.caption-sony span {
+    display: none;
+}
+.btn-link-sony {
+    display: block;
+    position: absolute;
+    bottom: 10%;
+    left: 35%;
+}
+.btn-link-sony .btn-link{
+    padding: 0.5rem 1rem;
+    background: linear-gradient(90deg, #0047ff, #00d4ff);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+    font-size: small;
+}
+
+/* Google - padrão para dispositivos móveis */
+.caption-google {
+    top: 0;
+    right: 0;
+    text-align: end;
+}
+.caption-google p{
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    margin-left: auto;
+    width: 60%;
+}
+.caption-google span {
+    display: none;
+}
+.btn-link-google {
+    display: block;
+    position: absolute;
+    bottom: 5%;
+    right: 25%;
+}
+.btn-link-google .btn-link{
+    padding: 0.5rem 1rem;
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+    font-size: 1rem;
+    text-align: center;
+    width: 35%;
+}
+
+/* Apple - padrão para dispositivos móveis */
+.caption-apple {
+    bottom: 15%;
+    left: 5%;
+    text-align: left;
+}
+.caption-apple p{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    width: 30%;
+}
+.caption-apple span{display: none;}
+.btn-link-apple{
+    display: block;
+    position: absolute;
+    right: 2%;
+    bottom: 45%;
+}
+.btn-link-apple .btn-link{
+    padding: 0.5rem 1rem;
+    background: linear-gradient(90deg, #2d2d2d, #383838);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+.img-edit{
+    width: 90%;
+}
+.about-text{
+    background: linear-gradient(135deg, #Ff4500, #ffd700);
+    animation: moveGradient 6s infinite alternate; 
+    background-size: 200% 200%;
+}
+.valores{
+    background: linear-gradient(135deg, #ff00e6, #0300ff);
+    animation: moveGradient 6s infinite alternate; 
+    background-size: 200% 200%;
+    width: 100%;
+    max-width: 320px;
+    box-sizing: border-box;
+}
+.card-spectra{
+    background: linear-gradient(135deg, #8A2BE2, #1E90FF);
+    animation: moveGradient 6s infinite alternate; 
+    background-size: 200% 200%
+}
+/* Animação do gradiente */
+@keyframes moveGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+.icon-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card{
+    flex: 1 1 100%;
+    max-width: 100%;
+}
+
+.accordion-button {
+    background-color: #010D26;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #1E90FF;
+    color: #fff;
+}
+
+.accordion-button:hover {
+    background-color: #8A2BE2;
+    color: #fff;
+}
+
+.accordion-item {
+    border: none;
+    border-bottom: 1px solid #555;
+}
+
+.accordion-body {
+    background-color: #020E30;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.accordion-body strong {
+    color: #FFD700;
+}
+
+.accordion-body em {
+    font-style: italic;
+    color: #ADD8E6;
+}
+
+.card-carousel{
+    width: 20rem;
+    height: 550px;
+    background: linear-gradient(145deg, #0E4C92, #1E81CE); /* Gradiente de impacto */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.formulario{
+    background: linear-gradient(135deg, #010D26, #1E90FF);
+    background-size: 300% 300%;
+    animation: moveGradient 6s infinite alternate;
+    box-shadow: 0 4px 10px rgba(0, 253, 249, 0.52);
+    border: 1px solid #1E90FF;
+}
+
+
+
+form .form-control {
+    background: #ffffff;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+form .form-control:focus {
+    border-color: #FFD700;
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
+    outline: none;
+}
+
+form .text-danger {
+    color: #FF6347;
+}
+
+/**********************************************************/
+/**********************************************************/
+/******************** Productos ***************************/
+/**********************************************************/
+/**********************************************************/
+#categoria{
+    width: 13%;
+    height: 10%;
+}
+#precios{
+    width: 12%;
+    height: 40px;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(50px); /* Para mover os elementos para baixo */
+}
+
+
+.teste-logo{
+    padding-left: 50%;
+}
+.hero {
+    position: relative;
+    height: 432px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.hero-text{
+    position: relative;
+    z-index: 10;
+    text-align: left;
+    padding: 0 20px;
+}
+.hero-text h1{
+    line-height: 1.2;
+}
+.hero-text p{
+    width: 55%;
+}
+.parallax-hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    min-width: 420px;
+    max-width: 1680px;
+}
+.parallax-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.layer1, .layer3, .layer5 {
+    display: none;
+}
+
+.layer2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 222px;
+    background-image: url('../assets/layer2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 767px;
+}
+
+.layer4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 180px;
+    height: 150px;
+    background-image: url('../assets/layer4.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 767px;
+}
+
+
+
+@keyframes parallax1 {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes parallax2 {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(20px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes parallax3 {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(30px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes parallax4 {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(40px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes parallax5 {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(50px); }
+    100% { transform: translateY(0); }
+}
+
+.hero-text a{
+    color: #DD7EFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+@keyframes ledBlink{
+    0%, 100%{
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.9), 0 0 10px rgba(255, 255, 255, 0.7);
+    }
+    50%{
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+}
+.hero:hover a{
+    animation: ledBlink 0.8s infinite alternate;
+}
+.boder-decor{
+    height: 5px;
+    background: linear-gradient(90deg, #A70DE7 0%, #0073FF 100%);
+}
+.boder-decor {
+    background-size: 200% 100%;
+    animation: flipFlop 3s ease-in-out infinite;
+}
+@keyframes flipFlop {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+.position-txt{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.position-txt-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+.img-stl{
+    width: 50%;
+    transition: transform 0.3s ease;
+}
+.card-img{
+    overflow: hidden;
+}
+.img-stl:hover {
+    transform: scale(1.1); 
+}
+.card-catalogo{
+    height: 550px;
+    background: linear-gradient(145deg, #0E4C92, #1E81CE); /* Gradiente de impacto */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+.card-hover{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.btn-agregar{
+    background: linear-gradient(135deg, #ff00e6, #0300ff);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.btn-agregar:hover {
+    background: linear-gradient(45deg, #ff00e6, #0300ff); /* Gradiente mais escuro no hover */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+/**********************************************************/
+/**********************************************************/
+/******************** detalles ****************************/
+/**********************************************************/
+/**********************************************************/
+
+/* Estilo para a seção de descrição */
+.description-stl {
+    padding: 1.5rem;
+    background: linear-gradient(145deg, #0E4C92, #1E81CE); /* Gradiente de impacto */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* Sombra para profundidade */
+    line-height: 1.6;
+    color: #ffffff; /* Texto branco para contraste */
+}
+.description-stl p{
+    font-size: 1rem;
+}
+
+/* Estilo para imagens */
+.img-present {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Estilo para tabelas */
+.table {
+    margin-top: 2rem;
+    background: linear-gradient(145deg, #0E4C92, #1E81CE); /* Gradiente também aplicado aqui */
+    border-radius: 12px;
+    overflow: hidden;
+    color: #ffffff; /* Texto branco */
+}
+/* Definir o conteiner da imagem */
+div .image-container {
+    position: relative;
+    width: 50%; 
+    height: auto;
+}
+.table th {
+    background-color: rgba(0, 0, 0, 0.2); /* Fundo translúcido para contraste */
+    font-weight: 600;
+    color: #ffffff;
+    text-align: left;
+}
+
+.table td {
+    color: #0e86f7; /* Texto em tom claro */
+    padding: 0.75rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Linha sutil */
+}
+
+.table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Realce na linha ao passar o mouse */
+}
+
+/* Botao de compra */
+.btn-compra {
+    background: linear-gradient(145deg, #0071e3, #005bb5); /* Gradiente no botão */
+    border: none;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-compra:hover {
+    background: linear-gradient(145deg, #005bb5, #003d8c); /* Gradiente mais escuro no hover */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Iframe responsivo */
+iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/*Informe de detalle de pago style*/
+
+.payment-info {
+    padding: 10px 20px;
+    color: white;
+    border-radius: 8px;
+}
+
+.payment-info h4 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.payment-info i {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.payment-info i:hover {
+    color: #0dcaf0; /* Altera a cor ao passar o mouse */
+}
+
+
+
+@media(min-width: 768px){
+
+    /**************************************/
+    /************Home Landing *************/
+    /**************************************/
+
+    /* Ajustes gerais para tablets e desktops */
+    .carousel-caption {
+        padding: 2rem;
+    }
+
+    /* Sony - centralizado com botão no meio */
+    .caption-sony {
+        bottom: 10%;
+        left: 5%;
+        text-align: center;
+    }
+    .caption-sony p {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        width: 90%;
+    }
+    .caption-sony span {
+        display: block;
+    }
+    .btn-link-sony {
+        display: block;
+        position: absolute;
+        bottom: 5%;
+        left: 45%;
+    }
+    
+    /* Google - padrão para dispositivos móveis */
+    .caption-google {
+        top: 0;
+        right: 0;
+        text-align: end;
+    }
+    .caption-google p{
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        margin-left: auto;
+        width: 80%;
+    }
+    .caption-google span {
+        display: block;
+        text-align: end;
+        margin-left: auto;
+        width: 50%;
+    }
+    .btn-link-google {
+        display: block;
+        position: absolute;
+        bottom: 8%;
+        right: 25%;
+    }
+    
+    /* Apple - padrão para dispositivos móveis */
+    .caption-apple {
+        bottom: 15%;
+        left: 5%;
+        text-align: left;
+    }
+    .caption-apple p{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        width: 30%;
+    }
+    .caption-apple span{
+        display: block;
+        width: 30%;
+    }
+    .btn-link-apple{
+        display: block;
+        position: absolute;
+        right: 10%;
+        bottom: 45%;
+    }
+    .img-edit{
+        width: 75%;
+    }
+    .card{
+        flex: 1 1 calc(50% - 1rem);
+    }
+    .valores{
+        width: 50%;
+        margin-left: 3rem;
+        height: 200px;
+    }
+
+    .formulario{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .siderbar{
+        background-color: rgb(255, 255, 255, 0.15);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(px);
+    }
+
+    /**************************************/
+    /************ Productos *************/
+    /**************************************/
+
+    .layer1{
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 425px;
+        height: 300px;
+        background-image: url('../assets/layer1.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .layer2{
+        width: 400px;
+        height: 390px;
+    }
+    
+    .layer4{
+        width: 300px;
+        height: 250px;
+    }
+    .card{
+        width: 100%;
+    }
+    .card-catalogo{
+        height: 600px;
+    }
+    .personal-info img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .social-media a {
+        font-size: 28px;
+    }
+
+    /******************** detalles ****************************/
+
+    .descrption-stl {
+        padding: 2rem;
+    }
+
+    .table th, .table td {
+        font-size: 1rem;
+    }
+
+    /* Estilo para as imagens */
+    .image1 {
+        position: absolute;
+        top: 5%;
+        left: 3%;
+        width: 100%;
+        object-fit: cover; 
+        border-radius: 15px; 
+        z-index: 1;
+    }
+    .image2{
+        position: absolute;
+        bottom: 10%;
+        right: 0;
+        width: 50%;
+        height: 200px;
+        z-index: 5;
+        object-fit: cover; 
+        border-radius: 15px; 
+        margin-right: 0;
+    }
+    .image3{
+        position: absolute;
+        bottom: 0;
+        left: 5%;
+        object-fit: cover;
+        width: 50%;
+        border-radius: 15px;
+        z-index: 6;
+    }
+}
+@media(min-width: 992px) and (max-width: 1680px){
+    /* Google */
+    .caption-google {
+        top: 0;
+        right: 10%;
+    }
+    .caption-google p{
+        width: 50%;
+    }
+    .caption-google span {
+        width: 30%;
+    }
+    .btn-link-google {
+        bottom: 9%;
+        right: 30%;
+    }
+    
+    /* Apple  */
+    .caption-apple {
+        bottom: 30%;
+        left: 15%;
+    }
+    .caption-apple span{
+        width: 30%;
+    }
+    .btn-link-apple{
+        right: 20%;
+        bottom: 45%;
+    }
+
+    .carousel-inner img{
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /* Sony  */
+    .caption-sony {
+        left: 10%;
+        bottom: 5%;
+    }
+    .caption-sony p {
+        font-size: 2rem;
+        width: 60%;
+    }
+    .caption-sony span {
+        font-size: 1.5rem;
+    }
+    .caption-sony .btn-link {
+        font-size: 1rem;
+    }
+
+    .about-text{
+        max-width: 455px;
+        max-height: 450px;
+    }
+    .img-edit{
+        width: 450px;
+        height: 450px;
+        object-fit: cover;
+    }
+    .valores{
+        margin-left: 1rem;
+    }
+    .card {
+        flex: 1 1 calc(20% - 1rem); /* Ocupa 25% menos o espaço do gap */
+    }
+    .card-carousel{
+        height: 500px;
+    }
+
+    .hero-text p{
+        width: 45%;
+    }
+    .parallax-hero, .parallax-layer{
+        z-index: 0;
+    }
+    .layer1{
+        width: 600px;
+        height: 423px;
+    }
+    .layer2{
+        width: 427px;
+        height: 400px;
+        right: 100px;
+    }
+    .layer3{
+        display: block;
+        position: absolute;
+        top: 100px;
+        right: 420px;
+        width: 150px;
+        height: 118px;
+        background-image: url('../assets/layer3.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .layer4{
+        width: 400px;
+        height: 330px;
+        right: 100px;
+    }
+    .layer5{
+        display: block;
+        position: absolute;
+        top: 360px;
+        right: 45px;
+        width: 160px; 
+        height: 100px;
+        background-image: url('../assets/layer5.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        rotate: 180deg;
+    }
+    .boder-decor{
+        width: 35%;
+    }
+    .card{
+        width: 100%;
+    }
+    /******************** Footer ****************************/
+    footer {
+        padding: 40px 0;
+        min-width: 992px;
+        max-width: 1680px;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0 5rem;
+    }
+
+    .personal-info {
+        text-align: left;
+    }
+
+    .social-media {
+        justify-content: flex-end;
+    }
+
+    .social-media a {
+        font-size: 30px;
+    }
+
+    /******************** detalles ****************************/
+
+    .image-container {
+        height: auto;
+    }
+
+    .image {
+        width: 100%;
+        height: auto; /* Ajusta as imagens para manter a proporção */
+    }
+    /* Estilo para as imagens */
+    .image1 {
+        top: 0;
+        left: 3%;
+        width: 100%;
+        height: 250px;
+    }
+    .image2{
+        bottom: 8%;
+        right: 15%;
+        width: 45%;
+        height: 200px;
+    }
+    .image3{
+        bottom: 0;
+        left: 15%;
+        width: 35%;
+        height: 150px;
+    }
+}

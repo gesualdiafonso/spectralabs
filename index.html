@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="faviconfg.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <title>Spectra Labs</title>
+</head>
+<body class="">
+    <!--Header-->
+    <header class="d-flex justify-content-center">
+        <!--NavBar-->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand p-4" href="index.html">Spectra Lab</a>
+                <button class="navbar-toggler text-bg-dark" 
+                        type="button" data-bs-toggle="offcanvas" 
+                        data-bs-target="#offcanvasNavbar" 
+                        aria-controls="offcanvasNavbar" 
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!--SideBar-->
+                <div class="siderbar offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    
+                    <!--Sidebar Header-->
+                    
+                    <div class="offcanvas-header text-white border-bottom">
+                        <h1 class="offcanvas-title p-lg-5" id="offcanvasNavbarLabel">Spectra Lab</h1>
+                        <button type="button" class="btn-close  btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <!--Sidebarbody-->
+
+                    <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0 text-white">
+                        <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+                            <li class="nav-item">
+                            <a class="nav-link mx-2" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link mx-2" href="#about">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link mx-2" href="#beneficios">Beneficios</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link mx-2" href="#contacto">Contacto</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle mx-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Produtos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="productos.html">Realidad Virtual</a></li>
+                                <li><a class="dropdown-item text-black" href="productos.html">Realidad Aumentada</a></li>
+                                <li><a class="dropdown-item text-black" href="productos.html">Realidad Mista</a></li>
+                            </ul>
+                            </li>
+                        </ul>
+                        <!--Carrito-->
+                        <div class="d-flex justify-content-center aling-items-center flex-column flex-lg-row">
+                            <button type="button" class="btn btn-primary mt-lg-3 mx-auto carrito"><i class="bi bi-cart4" style="font-size: 24px; color: white;"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+        <!--Fin de Header-->
+
+
+        <!--Hero Section-->
+    <main class="mb-5">
+        <!--Carousel-->
+        <div class="container">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Slide 1 - Sony -->
+                    <div class="carousel-item active">
+                        <a href="productos.html">
+                            <img src="assets/banner-sony.jpg" class="d-block rounded" alt="Sonny VR Banner">
+                        </a>
+                        <div class="carousel-caption caption-sony">
+                            <p class="text-start">Explore el futuro de la realidad vitual con Spectra Labs.</p>
+                            <span class="text-start">Transformando experiencias digitales en pura emoción</span>
+                        </div>
+                        <div class="btn-link-sony">
+                            <a href="productos.html" class="btn-link">Saber más</a>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 - Google -->
+                    <div class="carousel-item">
+                        <a href="productos.html">
+                            <img src="assets/Banner-google.jpg" class="d-block rounded" alt="Google Glasses Banner">
+                        </a>
+                        <div class="carousel-caption caption-google">
+                            <p>Mejore su visión del futuro con Spectra Labs</p>
+                            <span>Tecnología de vanguardia para transformar la vida cotidiana en experiencias inteligentes.</span>
+                        </div>
+                        <div class="btn-link-google">
+                            <a href="productos.html" class="btn-link">Saber más</a>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 - Apple -->
+                    <div class="carousel-item">
+                        <a href="productos.html">
+                            <img src="assets/banner-apple.jpg" class="d-block rounded" alt="Apple Vision Banner">
+                        </a>
+                        <div class="carousel-caption caption-apple">
+                            <p>Reimagine la realidad con Spectra Labs.</p>
+                            <span>Innovación que te conecta con el futuro hoy.</span>
+                        </div>
+                        <div class="btn-link-apple">
+                            <a href="productos.html" class="btn-link">Saber más</a>
+                        </div>
+                    </div>
+
+                
+                    <!-- Controles -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                    </button>
+                </div>                  
+            </div>
+        </div>
+        <!--Fin de Carousel-->
+    </main>
+    
+    <!--Contenido Landing-->
+    
+    <!--About-->
+
+    <section id="about" class="text-white">
+        <div class="container">
+            <div class="row align-items-center mx-lg-5">
+                <div class="col-12 col-lg-6 mb-3 text-center">
+                    <img 
+                        src="assets/SpectraLabsInovation.webp" 
+                        alt="Imersión Spectra Labs"
+                        class="img-fluid rounded img-edit mx-auto"
+                    >
+                </div>
+                <div class="col col-lg-6 rounded w-50 h-100 py-4 px-5 about-text mx-lg-auto">
+                    <h2>¿Quién somos?</h2>
+                    <p><strong>Spectra Labs</strong> es líder mundial en la comercialización de equipos de <strong>Realidad Virtual, Aumentada y Mixta</strong>. Nacimos con el propósito de <strong>transformar la interacción humana con la tecnología</strong>, ofreciendo soluciones innovadoras que integran calidad, comodidad y rendimiento.</p>
+                    <p>Nosotros nos posicionamos como una <strong>referencia en el ámbito de la multimedia avanzada</strong>. Nos enorgullecemos de trabajar con grandes marcas prestigiosas del mercado de realidades avanzadas, estando a la vanguardia en el desarrollo de herramientas que <strong>redefinen cómo es el mundo digital</strong>. Nuestra <strong>innovación</strong> no es solo un objetivo, es nuestro ADN.</p>
+                </div>
+            </div>
+            <div class="m-5">
+                <h3 class="fs-1 text-center text-lg-end">Nuestros valores</h3>
+            </div>
+            <div class="row m-2 align-items-center justify-content-center">
+                <div class="col-12 col-lg-4 rounded p-4 valores my-4">
+                    <h4 class="fs-2 text-center">Innovación continua</h4>
+                    <p>Ofrecemos <strong>tecnología de punta</strong> que inspira <strong>nuevas posibilidades</strong> para que explore.</p>
+                </div>
+                <div class="col-12 col-lg-4 rounded p-4 valores my-2">
+                    <h4 class="fs-2 fs-md- text-center">Accesibilidad global</h4>
+                    <p> Desarrollamos <strong>tecnologías que respeten el medio ambiente</strong> y fomenten la <strong>inclusión</strong>.</p>
+                </div>
+                <div class="col-12 col-lg-4 rounded p-4 valores my-4">
+                    <h4 class="fs-2 text-center">Sostenibilidad y ética</h4>
+                    <p>Desarrollamos <strong>tecnologías responsables</strong> que respeten el medio ambiente y fomenten la inclusión.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Fin de About-->
+
+
+    <!--Beneficios-->
+
+    <section id="beneficios" class="text-white">
+        <div class="container my-5">
+            <div class="text-left text-md-center">
+                    <h2 class="h1 fst-normal mt-2 my-3">Beneficios</h2>
+                    <span class="h3 fw-bold my-2">Gran ventaja...</span>
+                    <p class="my-3">La incorporación de <strong>tecnologías de realidad aumentada</strong> transforma profundamente la forma en que interactuamos con el mundo que nos rodea, ofreciendo <em>experiencias inmersivas e interactivas</em>, que nos permiten <strong>explorar escenarios virtuales</strong> y <em>visualizaciones reales</em>.</p>
+            </div>
+
+            <!--Card de Beneficios Icon-->
+            <div class="d-flex flex-wrap icon-card">
+                <div class="card card-spectra my-2 w-50">
+                    <div class="card-body text-white">
+                        <div class="card-img text-center">
+                            <img src="icons/icons-01.png" alt="Icon-Imercion" class="img-fluid">
+                        </div>
+                        <h3 class="text-center h5">Imerción Total</h3>
+                        <p class="card-text">Explore <strong>nuevos mundos</strong> y vivencie <em>experiencias como nunca antes</em>.</p>
+                    </div>
+                </div>
+
+                <div class="card card-spectra my-2 w-50">
+                    <div class="card-body text-white">
+                        <div class="card-img text-center">
+                            <img src="icons/icons-05.png" alt="Icon-Imercion" class="img-fluid ">
+                        </div>
+                        <h3 class="text-center h5">Experiencia mejorada</h3>
+                        <p class="card-text">Añade una <strong>nueva capa de información</strong> a tu <em>vida cotidiana</em>.</p>
+                    </div>
+                </div>
+                
+                <div class="card card-spectra my-2 w-50">
+                    <div class="card-body text-white">
+                        <div class="card-img text-center">
+                            <img src="icons/icons-04.png" alt="Icon-Imercion" class="img-fluid">
+                        </div>
+                            <h3 class="text-center h5">Interactividad con el mundo real (MR)</h3>
+                            <p class="card-text">Lleva lo <em>digital</em> a la vida real colaborando <strong>en tiempo real</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="card card-spectra my-2 w-50">
+                    <div class="card-img text-center">
+                        <img src="icons/icons-03.png" alt="Icon-Imercion" class="img-fluid text-center">
+                    </div>
+                    <div class="card-body text-white">
+                        <h3 class="text-center h5">Asistencia técnica especializada</h3>
+                        <p class="card-text">Nuestro equipo está siempre disponible para <strong>ayudarle en todo momento</strong>.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Acordión-->
+            <div class="p-2 mt-4">
+                <div class="accordion" >
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Realidad Virtual (VR)
+                            </button>
+                        </h4>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p><strong>La Realidad Virtual</strong> ofrece <em>experiencias completamente inmersivas</em> que transportan a los usuarios a mundos digitales diseñados para estimular los sentidos. Esta tecnología permite explorar escenarios virtuales en un entorno controlado y seguro.</p>
+                                <p>En sectores como <strong>educación</strong>, <em>entretenimiento</em> e <strong>industria</strong>, la VR mejora el aprendizaje, fomenta la creatividad y ofrece oportunidades únicas para entrenar y desarrollar habilidades prácticas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Realidad Aumentada (AR)
+                            </button>
+                        </h4>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p><strong>La Realidad Aumentada</strong> fusiona elementos digitales con el entorno físico, proporcionando <em>capas de información adicionales</em> que enriquecen la percepción y mejoran las actividades cotidianas.</p>
+                                <p>Desde aplicaciones en el <strong>comercio minorista</strong> hasta soluciones en <strong>turismo</strong>, la AR permite visualizar conceptos, mejorar la toma de decisiones y transformar las experiencias diarias en algo único e interactivo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Realidad Mista (MR)
+                            </button>
+                        </h4>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p><strong>La Realidad Mixta</strong> combina lo mejor de lo físico y lo virtual, creando un entorno donde los objetos digitales y reales pueden <em>interactuar en tiempo real</em>. Esta tecnología es ideal para simulaciones avanzadas y entornos colaborativos.</p>
+                                <p>En sectores como la <strong>salud</strong> y la <strong>manufactura</strong>, la MR ya está revolucionando procesos como la formación médica y el diseño industrial, llevando la tecnología a niveles sin precedentes de innovación.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Fin de Beneficios-->
+    
+    <!--Productos Carousel-->
+
+    <section class="">
+        <div class="container mt-5">
+            <h2 class="text-center mb-4 text-white fs-1 fw-bold">Explore Nuestros Productos</h2>
+            <!-- Carrossel -->
+            <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+    
+                <!-- Itens do Carrossel -->
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active text-white">
+                        <div class="mx-auto card-carousel p-4">
+                            <div class="card-img-top text-center">
+                                <img src="assets/VR/MetaQuest3.png" class="img-fluid img-stl" alt="Meta Quest 3">
+                            </div>
+                            <div class="card-body text-center">
+                                <h3 class="card-title h4 fw-bold mt-2">Meta Quest 3</h3>
+                                <p class="card-text mt-2">Un casco autónomo que ofrece gráficos de alta calidad y un sólido ecosistema de juegos y experiencias de RV.</p>
+                                <a href="productos.html" class="btn btn-primary">Saber más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="mx-auto card-carousel p-4 text-white">
+                            <div class="card-img-top text-center">
+                                <img src="assets/MR/AppleVisionPro.png" class="img-fluid img-stl" alt="Apple Visio Pro">
+                            </div>
+                            <div class="card-body text-center">
+                                <h3 class="card-title h4 fw-bold mt-2">Apple Vision Pro</h3>
+                                <p class="card-text mt-2">Se lanzan como un dispositivo mixto (RV y RA), que combina una experiencia inmersiva con su propio sistema operativo, permitiendo una interacción natural.</p>
+                                <a href="productos.html" class="btn btn-primary">Saber más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="card-carousel p-4 mx-auto text-white">
+                            <div class="card-img-top text-center">
+                                <img src="assets/AR/GoogleGlassEnterpriseEdition2.png" class="img-fluid img-stl" alt="Google Glasses Enterprise Edition 2">
+                            </div>
+                            <div class="card-body text-center">
+                                <h3 class="card-title h4 fw-bold mt-2">Google Glasses Enterprise Edition 2</h3>
+                                <p class="card-text mt-2">Una versión de Google Glass orientada al uso empresarial.</p>
+                                <a href="productos.html" class="btn btn-primary">Saber más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="carousel-item">
+                        <div class="card-carousel p-4 mx-auto text-white">
+                            <div class="card-img-top text-center">
+                                <img src="assets/AR/MicrosoftHoloLens2.png" class="img-fluid img-stl" alt="Microsft Holo">
+                            </div>
+                            <div class="card-body text-center">
+                                <h3 class="card-title h4 fw-bold mt-2">Microsoft Holo</h3>
+                                <p class="card-text mt-2">Un casco de realidad mixta centrado en la realidad aumentada, diseñado para sectores industriales, con hologramas superpuestos al mundo real.</p>
+                                <a href="productos.html" class="btn btn-primary">Saber más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="carousel-item">
+                        <div class="card-carousel p-4 mx-auto text-white">
+                            <div class="card-img-top text-center">
+                                <img src="assets/AR/LenovoThinkRealityA3.png" class="img-fluid img-stl" alt="Lenovo Think Reality A3">
+                            </div>
+                            <div class="card-body text-center">
+                                <h3 class="card-title h4 fw-bold">Lenovo Think Reality A3</h3>
+                                <p class="card-text mt-2">Son dispositivos orientados a las empresas, ligeros y diseñados para conectarse desde un ordenador o un smartphone, que admiten flujos de trabajo y colaboración a distancia.</p>
+                                <a href="productos.html" class="btn btn-primary">Saber más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Controles -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!--Fim de Productos Carousel-->
+    
+    <!--Contact Form-->
+
+    <section id="contacto" class="">
+        <div class="container">
+            <div class="border rounded-4 p-4 text-white mt-5 formulario">
+                <h3 class="fs-1 fw-bold text-center fst-normal">Entre en Contacto</h3>
+                <p class="fs-4 text-center">Transformando la interacción humana con la tecnología.</p>
+                <p class="fs-5 text-center text-warning fw-semibold">
+                    Si tienes preguntas sobre nuestros productos de realidad virtual, aumentada y mixta, deseas más información sobre precios o disponibilidad, ¡no dudes en contactarnos!
+                </p>
+                <form action="#">
+                    <div class="row">
+                        <!--Nombre-->
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="name" class="form-label">Nombre <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="name" placeholder="Su nombre completo" required>
+                        </div>
+
+                        <!--Email-->
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="email" class="form-label">E-mail <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="Su correo eletronico" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Telefone -->
+                        <div class="col-12 col-md-4 mb-3">
+                            <label for="phone" class="form-label">Telefono</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="(DDD) XXXX-XXXX">
+                        </div>
+                
+                        <!-- Cidade -->
+                        <div class="col-12 col-md-4 mb-3">
+                            <label for="city" class="form-label">Ciudad</label>
+                            <input type="text" class="form-control" id="city" placeholder="Sua cidade">
+                        </div>
+
+                        <!--Codigo postal-->
+                        <div class="col-12 col-md-4 mb-3">
+                            <label for="postalCode" class="form-label">Código Postal</label>
+                            <input type="text" class="form-control" id="postalCode" placeholder="Seu código postal">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Comentário -->
+                        <div class="mb-3">
+                            <label for="comments" class="form-label">Mensajeria</label>
+                            <textarea class="form-control" id="comments" rows="4" placeholder="Informe su solicitud..."></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn btn-outline-light w-50">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!--Fin de Contact-->
+    
+    
+    <!--FOOTER-->
+
+    <footer class="bg-info bg-gradient bg-opacity-75 mt-5 w-100">
+        <div class="footer-container w-100">
+            <!--Seccion de informaciones personales-->
+            <ul class="personal-info">
+                <li><img src="assets/foto200x200.jpg" alt="Foto Afonso Gesualdi"></li>
+                <li>Afonso Gesualdi</li>
+                <li>23 años</li>
+                <li><a href="mailto:afonso.arruda@davinci.edu.ar" class="text-white text-decoration-none">afonso.arruda@davinci.edu.ar</a></li>
+            </ul>
+
+            <!--Seccion de redes sociales-->
+            <ul class="social-media">
+                <li><a href="https://www.facebook.com/profile.php?id=61557359953407&mibextid=LQQJ4d" target="_blank" title="Facebook"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/gesualdi.design/profilecard/?igsh=MTd0ZHY2N2I1N3k1ZA==" target="_blank" title="Instagram"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="https://www.behance.net/afonsogesualdi" target="_blank" title="Behance"><i class="bi bi-behance"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/afonso-gesualdi-aaa9bb244/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
+                <li><a href="https://github.com/gesualdiafonso" target="_blank" title="GitHub"><i class="bi bi-github"></i></a></li>
+            </ul>
+        </div>
+        </footer>
+
+    <!--FIN FOOTER-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</body>
+</html>
