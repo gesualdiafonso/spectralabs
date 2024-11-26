@@ -476,13 +476,6 @@ form .text-danger {
         background-position: 0% 0%;
     }
 }
-.position-txt{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
 
 .position-txt-2{
     display: flex;
@@ -492,7 +485,9 @@ form .text-danger {
     gap: 20px;
 }
 
-
+.form-select{
+    width: 35% !important;
+}
 
 .img-stl{
     width: 50%;
@@ -505,7 +500,7 @@ form .text-danger {
     transform: scale(1.1); 
 }
 .card-catalogo{
-    height: 550px;
+    height: 450px;
     background: linear-gradient(145deg, #0E4C92, #1E81CE); /* Gradiente de impacto */
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
@@ -763,7 +758,10 @@ iframe {
         width: 100%;
     }
     .card-catalogo{
-        height: 600px;
+        height: 450px;
+    }
+    .form-select{
+        width: 25% !important;
     }
     .personal-info img {
         width: 100px;
@@ -869,7 +867,7 @@ iframe {
 
     .about-text{
         max-width: 455px;
-        max-height: 450px;
+        height: auto;
     }
     .img-edit{
         width: 450px;
@@ -932,8 +930,14 @@ iframe {
     .boder-decor{
         width: 35%;
     }
+    .form-select{
+        width: 12% !important;
+    }
     .card{
         width: 100%;
+    }
+    .card-catalogo{
+        height: 540px;
     }
     /******************** Footer ****************************/
     footer {

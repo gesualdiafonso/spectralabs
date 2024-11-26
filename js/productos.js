@@ -1,8 +1,3 @@
-/**
- * Programacion 1
- * Contreras, Nairut
- * Gesualdi, Afonso
- */
 'use strict'
 // Variable global para guardar produtos
 let productosGlobal = [];

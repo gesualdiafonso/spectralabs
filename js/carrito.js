@@ -1,9 +1,3 @@
-/**
- * Programacion 1
- * Contreras, Nairut
- * Gesualdi, Afonso
- */
-
 'use strict'
 
 // Variable para agregar los productos al carrito

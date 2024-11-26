@@ -1,9 +1,4 @@
-/**
- * Programacion 1
- * Contreras, Nairut
- * Gesualdi, Afonso
- */
-'use strict'
+'use strict';
 
 // Referencia global para el mini-carrito cuando hover
 const carritoBtn = document.querySelector(".carrito");
@@ -21,16 +16,41 @@ carritoBtn.parentNode.appendChild(carritoWrapper);
 carritoWrapper.appendChild(carritoBtn);
 carritoWrapper.appendChild(miniContainer);
 
-// Evento para mostrar y ocultar el mini-cart
-carritoWrapper.addEventListener("mouseover", showMiniCarrito);
-carritoWrapper.addEventListener("mouseout", hideMiniCarrito);
-miniContainer.addEventListener("mouseover", showMiniCarrito);
-miniContainer.addEventListener("mouseout", hideMiniCarrito);
+// Variable para controlar si el mouse está sobre el carrito o el mini-carrito
+let isHovering = false;
+
+// Evento para mostrar el mini-carrito cuando el mouse está sobre el carritoWrapper
+carritoWrapper.addEventListener("mouseover", () => {
+    isHovering = true;
+    showMiniCarrito();
+});
+
+// Evento para ocultar el mini-carrito cuando el mouse sale de carritoWrapper y miniContainer
+carritoWrapper.addEventListener("mouseout", () => {
+    setTimeout(() => {
+        if (!isHovering) hideMiniCarrito();
+    }, 100); // Delay para permitir transición
+});
+
+// Evento para mantener visible el mini-carrito cuando el mouse está sobre miniContainer
+miniContainer.addEventListener("mouseover", () => {
+    isHovering = true;
+});
+
+// Evento para ocultar el mini-carrito cuando el mouse sale de miniContainer
+miniContainer.addEventListener("mouseout", () => {
+    isHovering = false;
+    setTimeout(() => {
+        if (!isHovering) hideMiniCarrito();
+    }, 100); // Delay para evitar ocultar inmediatamente
+});
 
 // Función para mostrar el mini-carrito
 function showMiniCarrito() {
-    miniContainer.style.display = "block";
-    renderMiniCarrito();
+    if (window.matchMedia("(min-width: 992px)").matches) {
+        miniContainer.style.display = "block";
+        renderMiniCarrito();
+    }
 }
 
 // Función para ocultar el mini-carrito
@@ -38,57 +58,55 @@ function hideMiniCarrito() {
     miniContainer.style.display = "none";
 }
 
+// Listener para ajustar la visibilidad según el tamaño de la pantalla
+function updateMiniCarritoVisibility() {
+    if (!window.matchMedia("(min-width: 992px)").matches) {
+        miniContainer.style.display = "none"; // Ocultar en tamaños menores
+    }
+}
+
+// Llama a la función al cargar la página y en cada cambio de tamaño
+window.addEventListener("resize", updateMiniCarritoVisibility);
+updateMiniCarritoVisibility();
+
 // Función de renderización del mini-carrito
 function renderMiniCarrito() {
-    // Limpia el mini-cart antes de ser renderizado
-    miniContainer.innerHTML = "";
+    miniContainer.innerHTML = ""; // Limpia el mini-carrito antes de renderizarlo
 
-    // Contenedor para los items del carrito
     const itemsContainer = document.createElement("div");
-
-    // Variable para guardar el total
     let total = 0;
 
-    // Bucle por los productos en el carrito
     for (const productId in carrito) {
         const item = carrito[productId];
         total += item.price * item.cantidad;
 
-        // Contenedor del item en el mini-cart
         const itemContainer = document.createElement("div");
         itemContainer.className = "mini-cart-item d-flex align-items-center";
 
-        // Imagen del producto
         const itemImage = document.createElement("img");
-        itemImage.src = item.image;  // Accede a la URL de la imagen del JSON
+        itemImage.src = item.image;
         itemImage.alt = item.name;
-        itemImage.className = "mini-cart-image img-thumbnail me-2"; // Añade clases de Bootstrap
+        itemImage.className = "mini-cart-image img-thumbnail me-2";
 
-        // Nombre y cantidad del producto
         const itemName = document.createElement("span");
         itemName.textContent = `${item.name} (x${item.cantidad})`;
         itemName.className = "mini-cart-name";
 
-        // Precio del item
         const itemPrice = document.createElement("span");
         itemPrice.textContent = `U$ ${(item.price * item.cantidad).toFixed(2)}`;
         itemPrice.className = "mini-cart-price ms-auto";
 
-        // Añade la imagen, el nombre y el precio al contenedor del item
         itemContainer.appendChild(itemImage);
         itemContainer.appendChild(itemName);
         itemContainer.appendChild(itemPrice);
-
-        // Añade el itemContainer al itemsContainer
         itemsContainer.appendChild(itemContainer);
     }
 
-    // Añade el contenedor de items al mini-cart
     miniContainer.appendChild(itemsContainer);
 
-    // Sección de subtotal
     const totalContainer = document.createElement("div");
-    totalContainer.className = "mini-cart-total d-flex justify-content-between align-items-center mt-3 text-dark";
+    totalContainer.className =
+        "mini-cart-total d-flex justify-content-between align-items-center mt-3 text-dark";
 
     const totalLabel = document.createElement("span");
     totalLabel.textContent = "Total: U$ ";
@@ -99,13 +117,11 @@ function renderMiniCarrito() {
     totalContainer.appendChild(totalLabel);
     totalContainer.appendChild(totalAmount);
 
-    // Botón de checkout
     const checkoutBtn = document.createElement("button");
     checkoutBtn.className = "btn btn-primary btn-sm w-100 mt-2";
     checkoutBtn.textContent = "Finalizar la compra";
     checkoutBtn.addEventListener("click", checkout);
 
-    // Añade el subtotal y el botón de checkout al mini-cart
     miniContainer.appendChild(totalContainer);
     miniContainer.appendChild(checkoutBtn);
 }
