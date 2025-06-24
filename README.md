@@ -83,3 +83,10 @@ This project is live and accessible via Vercel, a cloud platform optimized for f
 https://spectra-labs.vercel.app
 
 Vercel provides lightning-fast deployment, automated builds, and seamless integration with modern developer workflows — ideal for projects like Spectra Labs that demand performance and futuristic presentation.
+
+## Autor
+Afonso Gesualdi
+Contact: afonsogesualdiarr@gmail.com
+
+[![Portfolio](https://img.shields.io/badge/PORTFOLIO-blue?style=for-the-badge)](https://afonsodev.vercel.app/)
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-blue?style=for-the-linkedin)](https://afonsodev.vercel.app/](https://www.linkedin.com/in/afonso-gesualdi-aaa9bb244/))
